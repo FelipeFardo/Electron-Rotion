@@ -3,11 +3,11 @@ import path from 'node:path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png'
 import { createFileRoute, createURLRoute } from 'electron-router-dom'
+import { createTray } from './tray'
+import { createShortcuts } from './shortcuts'
 
 import './ipc'
 import './store'
-import { createTray } from './tray'
-import { createShortcuts } from './shortcuts'
 
 function createWindow(): void {
   // Create the browser window.
